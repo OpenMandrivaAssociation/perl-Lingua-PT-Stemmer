@@ -1,15 +1,15 @@
 %define upstream_name	 Lingua-PT-Stemmer
-%define upstream_version 0.01
+%define upstream_version 0.02
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Portuguese language stemming
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Lingua/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://github.com/neilb/Lingua-PT-Stemmer
+Source0:	https://cpan.metacpan.org/authors/id/N/NE/NEILB/Lingua-PT-Stemmer-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
