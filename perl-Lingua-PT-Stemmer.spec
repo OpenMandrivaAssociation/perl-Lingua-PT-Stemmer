@@ -1,15 +1,13 @@
 %define upstream_name	 Lingua-PT-Stemmer
-%define upstream_version 0.02
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.02
+Release:	2
 
 Summary:	Portuguese language stemming
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/neilb/Lingua-PT-Stemmer
-Source0:	https://cpan.metacpan.org/authors/id/N/NE/NEILB/Lingua-PT-Stemmer-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/N/NE/NEILB/Lingua-PT-Stemmer-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -19,7 +17,7 @@ BuildArch:	noarch
 Lingua-PT-Stemmer module for perl.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
